@@ -9,13 +9,13 @@ const ContainerBusiness = styled.main`
 
     h1{
         margin-top: 5%;
-        font-size: 40px;
+        font-size: 4vh;
         width: 35vw;
     }
 
     section{
         width: 35vw;
-        height: 35vw;
+        height: 65vh;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -29,7 +29,7 @@ const ContainerBusiness = styled.main`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 5px;
+        border-radius: 5%;
     }
 
     .icon{
@@ -37,7 +37,8 @@ const ContainerBusiness = styled.main`
     }
 
     p{
-        font-size: 30px;
+        margin-top: 7%;
+        font-size: 1.2vw;
     }
     
 `

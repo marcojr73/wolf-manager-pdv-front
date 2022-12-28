@@ -15,7 +15,7 @@ const ContainerHeader = styled.section`
     }
 
     h1{
-        font-size: 30px;
+        font-size: 2vw;
         font-weight: bold;
         color: var(--light-color);
     }
@@ -36,7 +36,8 @@ const ContainerHeader = styled.section`
         width: 40%;
         height: 20%;
         margin-right: 1%;
-        padding: 0px 0px 0px 10px;
+        padding: 0px 0px 0px 2%;
+        font-size: 1vw;
     }
 
     button{
@@ -44,6 +45,13 @@ const ContainerHeader = styled.section`
         height: 20%;
         background-color: var(--light-color);
         border: none;
+        font-size: 1vw;
+    }
+
+    input:focus{
+        border: 0 none;
+        box-shadow: 0 0 0 0;
+        outline: 0;
     }
 `
 
