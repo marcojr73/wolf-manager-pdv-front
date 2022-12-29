@@ -1,7 +1,7 @@
 import Image from "next/image"
 import ContainerHeader from "../../styles/header"
 
-function Header(){
+function Header({isAuthenticated}: {isAuthenticated: boolean}){
     return (
         <ContainerHeader>
             <section className="banner">
@@ -14,11 +14,13 @@ function Header(){
                 />
                 <h1>WolfManager - PDV</h1>
             </section>
+            {isAuthenticated ? <p>Loja do marcola</p> : 
             <form action="">
                 <input type="text" placeholder="credential"/>
                 <input type="password" placeholder="password"/>
                 <button>Log-in</button>
             </form>
+            }
         </ContainerHeader>
     )
 }

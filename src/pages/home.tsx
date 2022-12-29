@@ -1,6 +1,14 @@
+import Header from "../components/header"
+import ElevatedSection from "../components/home/elevatedSection"
+import VerticalMenu from "../components/home/verticalMenu"
+
 function Home(){
     return (
-        <h1>I am the home!</h1>
+        <>
+            <Header isAuthenticated={true}/>
+            <VerticalMenu/>
+            <ElevatedSection/>
+        </>
     )
 }
 

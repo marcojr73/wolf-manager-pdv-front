@@ -38,6 +38,7 @@ const ContainerSignUp = styled.main`
         border-top: none;
         border-left: none;
         border-right: none;
+        border-bottom: 0.1vw solid black;
         font-size: 0.8vw;
         padding: 0px 0px 0px 2%;
     }

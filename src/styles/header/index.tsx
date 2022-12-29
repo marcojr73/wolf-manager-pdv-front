@@ -53,6 +53,14 @@ const ContainerHeader = styled.section`
         box-shadow: 0 0 0 0;
         outline: 0;
     }
+
+    p{
+        font-size: 3vw;
+        margin-left: 7%;
+        color: var(--light-color);
+        display: flex;
+        align-items: center;
+    }
 `
 
 export default ContainerHeader

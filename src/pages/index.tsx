@@ -6,7 +6,7 @@ import ContainerAuth from "../styles/authpages";
 export default function Home() {
   return (
     <>
-      <Header/>
+      <Header isAuthenticated={false}/>
       <ContainerAuth>
          <Business/>
          <SignUp/>
