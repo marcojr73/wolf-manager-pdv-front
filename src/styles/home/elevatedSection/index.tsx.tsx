@@ -5,7 +5,7 @@ const ContainerElevatedSection = styled.main`
     height: 80vh;
     background-color: var(--light-color);
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     right: 0;
     -webkit-box-shadow: -5px -5px 14px rgba(50, 50, 50, 0.77);
 	-moz-box-shadow:    -5px -5px 14px rgba(50, 50, 50, 0.77);
