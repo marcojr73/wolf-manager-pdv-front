@@ -1,4 +1,5 @@
-import ContainerBusiness from "../../styles/authpages/containerBusiness"
+import React from "react"
+
 import {GiSlicedBread} from "react-icons/gi"
 import {RiStore3Fill} from "react-icons/ri"
 import {GiMeatCleaver} from "react-icons/gi"
@@ -9,6 +10,7 @@ import {MdSmartphone} from "react-icons/md"
 import {GiRemedy} from "react-icons/gi"
 import {GrUserWorker} from "react-icons/gr"
 
+import ContainerBusiness from "../../styles/authpages/containerBusiness"
 
 function Business(){
     return (

@@ -1,9 +1,12 @@
+import React from "react"
+
 import {BsPeopleFill} from "react-icons/bs"
 import {BsPlusCircleFill} from "react-icons/bs"
 import {MdPointOfSale} from "react-icons/md"
 import {SlSocialDropbox} from "react-icons/sl"
 import {FaFileInvoiceDollar} from "react-icons/fa"
 import {ImExit} from "react-icons/im"
+
 import ContainerVerticalMenu from "../../styles/home/ContainerVerticalMenu"
 import ISetState from "../../interfaces/IsetState"
 import Clients from "./elevatedSection/clients"

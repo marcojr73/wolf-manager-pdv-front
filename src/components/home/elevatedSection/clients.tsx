@@ -1,3 +1,5 @@
+import React from "react"
+
 import ContainerClients from "../../../styles/home/elevatedSection/containerClients"
 
 function Clients(){

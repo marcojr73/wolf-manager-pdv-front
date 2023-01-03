@@ -1,8 +1,7 @@
-import { useState } from "react"
+import React from "react"
 import ContainerRegister from "../../../styles/home/elevatedSection/containerRegister"
 
 function Register() {
-    const [ans, setAns] = useState(false)
     return (
         <ContainerRegister>
             <h1>Registro de novos produtos</h1>

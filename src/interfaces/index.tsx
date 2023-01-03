@@ -5,6 +5,13 @@ interface TsignUp {
     password: string,
 }
 
+interface TsignIn {
+    email: string,
+    password: string,
+}
+
+
 export type {
-    TsignUp
+    TsignUp,
+    TsignIn
 }

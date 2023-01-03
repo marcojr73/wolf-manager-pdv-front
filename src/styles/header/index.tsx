@@ -33,11 +33,9 @@ const ContainerHeader = styled.section`
     }
 
     input{
-        width: 40%;
-        height: 20%;
-        margin-right: 1%;
+        width: 100%;
+        height: 100%;
         padding: 0px 0px 0px 2%;
-        font-size: 1vw;
     }
 
     button{
@@ -54,12 +52,26 @@ const ContainerHeader = styled.section`
         outline: 0;
     }
 
-    p{
+    .business-name{
         font-size: 3vw;
         margin-left: 7%;
         color: var(--light-color);
         display: flex;
         align-items: center;
+    }
+
+    .field-input-error{
+        margin-right: 1%;
+        width: 40%;
+        height: 20%;
+    }
+
+    .input-error{
+        color: #FFF;
+        width: 70%;
+        font-weight: bold;
+        font-size: 0.7rem;
+        margin-top: 1%;
     }
 `
 

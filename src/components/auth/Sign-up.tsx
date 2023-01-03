@@ -1,6 +1,6 @@
-import Router from "next/router"
 import { useForm } from "react-hook-form"
 import React from "react"
+
 import { toast } from "react-toastify"
 
 import authApi from "../../api/authApi"
@@ -12,12 +12,21 @@ function SignUp() {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm()
+        reset
+    } = useForm({
+        defaultValues : {
+            email: "",
+            businessName: "",
+            cnpj: "",
+            password: ""
+        }
+    })
 
     async function onSubmit(data: any) {
         try {
             const response = await authApi.signUpApi(data)
             const message = messageTranslation(response)
+            reset()
             toast(message)
         } catch (error: any) {
             const message = messageTranslation(error.response.data)

@@ -1,3 +1,5 @@
+import React from "react"
+
 import ContainerElevatedSection from "../../../styles/home/elevatedSection/index.tsx"
 
 function ElevatedSection({functionality} : {functionality: JSX.Element}){
