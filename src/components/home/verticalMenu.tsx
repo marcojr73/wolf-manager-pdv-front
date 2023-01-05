@@ -8,7 +8,7 @@ import {FaFileInvoiceDollar} from "react-icons/fa"
 import {ImExit} from "react-icons/im"
 
 import ContainerVerticalMenu from "../../styles/home/ContainerVerticalMenu"
-import ISetState from "../../interfaces/IsetState"
+import {ISetState} from "../../interfaces/reactTypes"
 import Clients from "./elevatedSection/clients"
 import Register from "./elevatedSection/register"
 import Sales from "./elevatedSection/sales"

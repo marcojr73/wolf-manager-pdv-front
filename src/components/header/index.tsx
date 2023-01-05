@@ -1,12 +1,11 @@
 import React from "react"
-
-import Image from "next/image"
-import ContainerHeader from "../../styles/header"
 import { useForm } from "react-hook-form"
-import authApi from "../../api/authApi"
-import { messageTranslation } from "../../utils/messageTranslation"
-import { toast } from "react-toastify"
 import Router from "next/router"
+import Image from "next/image"
+
+import ContainerHeader from "../../styles/header"
+import authApi from "../../api/authApi"
+import showError from "../../utils/showError"
 
 function Header({ isAuthenticated }: { isAuthenticated: boolean }) {
     const {
@@ -23,11 +22,10 @@ function Header({ isAuthenticated }: { isAuthenticated: boolean }) {
     async function onSubmit(data: any) {
         try {
             const response = await authApi.signInApi(data)
-            localStorage.setItem("token", response.data)
+            localStorage.setItem("token", response)
             Router.push("./home")
         } catch (error: any) {
-            const message = messageTranslation(error.response.data)
-            toast.error(message)
+            showError(error)
         }
     }
     return (

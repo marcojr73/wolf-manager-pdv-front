@@ -10,8 +10,33 @@ interface TsignIn {
     password: string,
 }
 
+type IstateUser = {
+    user: {
+        businessName: string
+        clients: {
+            name: string
+            allPurchases: number
+            debit: number
+        }[] | never[];
+    }
+    setUser: (newState: {
+        businessName: string
+        clients: {
+            name: string
+            allPurchases: number
+            debit: number
+        }[]
+    }) => void
+}
+
+type TnewUser = {
+    name: string
+}
+
 
 export type {
     TsignUp,
-    TsignIn
+    TsignIn,
+    IstateUser,
+    TnewUser
 }

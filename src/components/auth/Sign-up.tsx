@@ -6,6 +6,7 @@ import { toast } from "react-toastify"
 import authApi from "../../api/authApi"
 import {messageTranslation} from "../../utils/messageTranslation"
 import ContainerSignUp from "../../styles/authpages/containerSignUp"
+import showError from "../../utils/showError"
 
 function SignUp() {
     const {
@@ -29,8 +30,7 @@ function SignUp() {
             reset()
             toast(message)
         } catch (error: any) {
-            const message = messageTranslation(error.response.data)
-            toast.error(message)
+            showError(error)
         }
     }
 
