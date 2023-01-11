@@ -11,6 +11,7 @@ const ContainerBusiness = styled.main`
         margin-top: 5%;
         font-size: 4vh;
         width: 35vw;
+        color: var(--primary-color);
     }
 
     section{
@@ -24,7 +25,7 @@ const ContainerBusiness = styled.main`
     }
 
     .business{
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -34,11 +35,13 @@ const ContainerBusiness = styled.main`
 
     .icon{
         font-size: 5vw;
+        color: var(--light-color);
     }
 
     p{
         margin-top: 7%;
         font-size: 1.2vw;
+        color: var(--light-color);
     }
     
 `

@@ -8,7 +8,7 @@ import {MdOutlineConstruction} from "react-icons/md"
 import {GiConverseShoe} from "react-icons/gi"
 import {MdSmartphone} from "react-icons/md"
 import {GiRemedy} from "react-icons/gi"
-import {GrUserWorker} from "react-icons/gr"
+import {MdBusinessCenter} from "react-icons/md"
 
 import ContainerBusiness from "../../styles/authpages/containerBusiness"
 
@@ -50,7 +50,7 @@ function Business(){
                     <p>Farmácias</p>
                 </div>
                 <div className="business">
-                    <GrUserWorker className="icon"/>
+                    <MdBusinessCenter className="icon"/>
                     <p>Serviços</p>
                 </div>
             </section>    

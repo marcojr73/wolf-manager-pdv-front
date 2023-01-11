@@ -1,9 +1,13 @@
-import React from "react"
+import React, { useContext } from "react"
 import { useForm } from "react-hook-form"
+import { toast } from "react-toastify"
 import clientsApi from "../../../../api/clientsApi"
+import { businessContext } from "../../../../provider"
 import showError from "../../../../utils/showError"
 
 function RegisterClients() {
+    const {business, setBusiness} = useContext(businessContext)
+    console.log(business)
     const {
         register,
         handleSubmit,
@@ -17,6 +21,9 @@ function RegisterClients() {
     async function onSubmit(data: any) {
         try {
             await clientsApi.newClientApi(data)
+            const response = await clientsApi.getClientsApi()
+            toast("Sucesso")
+            setBusiness(response)
         } catch (error: any) {
             showError(error)
         }

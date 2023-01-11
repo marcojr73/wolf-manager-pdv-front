@@ -38,12 +38,45 @@ const ContainerClients = styled.section`
 
     .square{
         display: flex;
-        background-color: red;
+        flex-direction: column;
         width: 90%;
-        height: 80%;
-        border: 1px solid black;
         align-self: center;
         margin: auto;
+    }
+
+    li{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #5B5B5B;
+        height: 4vh;
+    }
+
+    p{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin-left: 2%;
+        color: #5B5B5B;
+    }
+
+    .name{
+        width: 55%;
+    }
+
+    .index{
+        width: 5%;
+    }
+
+    .all-purchases, .debit{
+        width: 20%;
+    }
+
+    .all-purchases{
+        margin-left: 10%;
+    }
+
+    .top{
+        font-weight: bold;
     }
 `
 
