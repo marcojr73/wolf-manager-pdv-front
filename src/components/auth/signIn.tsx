@@ -7,7 +7,7 @@ import Loader from "../../utils/Loader"
 
 
 function SignInForm({ isSignIn, setIsSignIn }: { isSignIn: boolean, setIsSignIn: React.Dispatch<React.SetStateAction<boolean>> }) {
-    const [ textButton, setTextButton ] = useState<string | JSX.Element>("Não possui uma conta?")
+    const [textButton, setTextButton] = useState<string | JSX.Element>("Entrar")
     const {
         register,
         handleSubmit,
@@ -21,12 +21,12 @@ function SignInForm({ isSignIn, setIsSignIn }: { isSignIn: boolean, setIsSignIn:
 
     async function signIn(data: any) {
         try {
-            setTextButton(<Loader/>)
+            setTextButton(<Loader />)
             const response = await authApi.signInApi(data)
             localStorage.setItem("token", response)
             Router.push("./home")
         } catch (error: any) {
-            setTextButton("Não possui uma conta?")
+            setTextButton("Entrar?")
             showError(error)
         }
     }

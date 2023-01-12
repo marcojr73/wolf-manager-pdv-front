@@ -15,10 +15,20 @@ import Sales from "./elevatedSection/sales"
 import Stock from "./elevatedSection/stock"
 import Invoices from "./elevatedSection/invoices"
 import Exit from "./elevatedSection/exit"
+import Image from "next/image"
 
 function VerticalMenu({setFunctionality} : {setFunctionality: ISetState}){
     return(
         <ContainerVerticalMenu>
+            <div className="top">
+                <Image
+                    src="/images/fox-cash.png"
+                    alt="fox-cash-logo"
+                    width={100}
+                    height={100}
+                    className="logo"
+                />
+            </div>
             <aside>
                 <section onClick={() => setFunctionality(<Clients/>)}>
                     <BsPeopleFill className="icon"/>

@@ -46,25 +46,11 @@ const ContainerForm
         width: 70%;
         height: 15%;
         margin-top: 4%;
-        background-color: var(--secondary-color);
-        border: none;
-        border-radius: 5px;
-        font-size: 0.8vw;
-        padding: 0px 0px 0px 2%;
-        color: var(--light-color);
     }
     
     input::placeholder{
         color: var(--light-color);
 
-    }
-
-    input:focus{
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        box-shadow: 0 0 0 0;
-        outline: 0;
     }
 
     .button, .button-git{
@@ -96,14 +82,6 @@ const ContainerForm
         margin-bottom: 5%;
         color: var(--light-color);
         cursor: pointer;
-    }
-
-    .input-error{
-        color: #f51313;
-        width: 70%;
-        font-weight: bold;
-        font-size: 0.7rem;
-        margin-top: 1%;
     }
 
 `

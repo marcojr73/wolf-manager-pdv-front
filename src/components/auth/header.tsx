@@ -1,11 +1,7 @@
 import React from "react"
-import { useForm } from "react-hook-form"
-import Router from "next/router"
 import Image from "next/image"
 
 import ContainerHeader from "../../styles/header"
-import authApi from "../../api/authApi"
-import showError from "../../utils/showError"
 
 function Header() {
     return (
