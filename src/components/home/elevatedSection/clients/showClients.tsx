@@ -11,7 +11,6 @@ function ShowClients() {
         (async function () {
             try {
                 const response = await clientsApi.getClientsApi()
-                console.log(response)
                 setBusiness(response)
             } catch (error) {
                 console.log(error)
@@ -34,21 +33,26 @@ function ShowClients() {
                             <p className="name">Nome</p>
                         </div>
                         <div className="info">
-                            <p className="phone">Telefone</p>
-                            <p className="Adress">Endereço</p>
-                            <p className="debit">Valor em débito</p>
+                            <p className="info-item">Telefone</p>
+                            <p className="info-item">Endereço</p>
+                            <p className="info-item">Valor em débito</p>
                         </div>
                     </li>
-                    {/* {business.clients.map((client, index) => {
+                    {business.clients.map((client, index) => {
                         return (
                             <li key={index}>
-                                <p className="index">{index}</p>
-                                <p className="name">{client.name}</p>
-                                <p className="all-purchases">{client.allPurchases}</p>
-                                <p className="debit">{client.debit}</p>
+                                <div className="user">
+                                    <p className="index">{client.id}</p>
+                                    <p className="name">{client.name}</p>
+                                </div>
+                                <div className="info">
+                                    <p className="info-item">{client.phone}</p>
+                                    <p className="info-item">{client.adress.street}, {client.adress.number}</p>
+                                    <p className="info-item">{client.debit}</p>
+                                </div>
                             </li>
                         )
-                    })} */}
+                    })}
                 </ul>
             </ContainerShowClients>
     )

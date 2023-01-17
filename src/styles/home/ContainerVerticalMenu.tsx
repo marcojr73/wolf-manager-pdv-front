@@ -47,6 +47,17 @@ const ContainerVerticalMenu = styled.aside`
         font-size: 2vw;
     }
 
+    .switch{
+        margin-bottom: 10%;
+        display: flex;
+    }
+
+    .icon{
+        font-size: 1.2rem;
+        margin-left: 12%;
+        margin-top: 10%;
+    }
+
 `
 
 export default ContainerVerticalMenu

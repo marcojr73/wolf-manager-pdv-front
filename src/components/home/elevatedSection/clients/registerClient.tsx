@@ -7,8 +7,7 @@ import ContainerNewClient from "../../../../styles/home/elevatedSection/clients/
 import showError from "../../../../utils/showError"
 
 function RegisterClients() {
-    const { business, setBusiness } = useContext(businessContext)
-    console.log(business)
+    const { setBusiness } = useContext(businessContext)
     const {
         register,
         handleSubmit,

@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
+
 export default createGlobalStyle`
 * {
     margin: 0;
@@ -39,6 +40,10 @@ input:focus{
     font-weight: bold;
     font-size: 0.7rem;
     margin-top: 1%;
+}
+
+.switch{
+    position: absolute;
 }
 `
 

@@ -37,12 +37,23 @@ const ContainerNewClient = styled.section`
         width: 35%;
     }
 
-    .number{
-        width: 5%;
-    }
-
+    
     .phone{
         width: 20%;
+    }
+    
+    input[type=number]::-webkit-inner-spin-button { 
+        -webkit-appearance: none;
+    }
+
+    input[type=number] { 
+        -moz-appearance: textfield;
+        appearance: textfield;
+        padding-left: 20%;
+    }
+
+    .number{
+        width: 5%;
     }
 
     button{

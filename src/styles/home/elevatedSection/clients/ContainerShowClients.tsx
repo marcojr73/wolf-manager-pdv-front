@@ -19,7 +19,8 @@ const ContainerShowClients = styled.section`
         border-top-right-radius: 1.5vh;
         background-color: var(--secondary-color);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     div{
@@ -29,7 +30,16 @@ const ContainerShowClients = styled.section`
 
     .info{
         display: flex;
-        justify-content: space-between;
+    }
+
+    .info-item{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .name{
+        margin-left: 7%
     }
 
     li{
@@ -38,6 +48,7 @@ const ContainerShowClients = styled.section`
         align-items: center;
         width: 95%;
         height: 8%;
+        color: var(--light-color);;
     }
 
     .top{

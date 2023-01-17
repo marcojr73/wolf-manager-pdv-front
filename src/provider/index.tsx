@@ -1,46 +1,28 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { createContext, ReactNode, useState} from "react"
-import React from "react"
+import React, { createContext, useState } from "react"
+import { Tbusinesscontext, Tprops } from "../interfaces"
 
-type TbusinessProps = {
-    children: ReactNode 
-}
-
-const initialValue = {
+const initialBusiness = {
     business: {
         businessName: "",
         clients: [{
+            id: 0,
             name: "",
-            allPurchases: 0,
-            debit: 0,
-        }]
+            phone: "",
+            debit:  0,
+            adress: {
+                street: "",
+                number: "",
+            }
+        }],
     },
     setBusiness: () => { }
 }
 
-type Tcontext = {
-    business: {
-        businessName: string;
-        clients: {
-            name: string;
-            allPurchases: number;
-            debit: number;
-        }[];
-    },
-    setBusiness: (newState: {
-        businessName: "",
-        clients: [{
-            name: "",
-            allPurchases: 0,
-            debit: 0,
-        }]
-    },) => void
-}
+export const businessContext = createContext<Tbusinesscontext>(initialBusiness)
 
-export const businessContext = createContext<Tcontext>(initialValue)
-
-export const BusinessContextProvider = ({ children }: TbusinessProps) => {
-    const [business, setBusiness] = useState(initialValue.business)
+export const BusinessContextProvider = ({ children }: Tprops) => {
+    const [business, setBusiness] = useState(initialBusiness.business)
     return (
         <businessContext.Provider value={{ business, setBusiness }}>
             {children}
