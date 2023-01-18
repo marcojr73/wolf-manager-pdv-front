@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 
 const ContainerRegister = styled.section`
@@ -82,6 +82,7 @@ const ContainerRegister = styled.section`
         background-color: var(--primary-color);
         border: none;
         border-radius: 0.5rem;
+        margin-top: 5%;
     }
 `
 

@@ -1,17 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Business from "../components/auth/business"
-import SignUp from "../components/auth/Sign-up"
-import Header from "../components/header"
+import Form from "../components/auth/form"
+import Header from "../components/auth/header"
 import ContainerAuth from "../styles/authpages"
 
 export default function Home() {
+  const [isSignIn, setIsSignIn] = useState(false)
   return (
     <>
-      <Header isAuthenticated={false}/>
+      <Header/>
       <ContainerAuth>
          <Business/>
-         <SignUp/>
+         <Form setIsSignIn={setIsSignIn} isSignIn={isSignIn}/>
       </ContainerAuth>
     </>
   )

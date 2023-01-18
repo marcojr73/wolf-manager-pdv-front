@@ -1,16 +1,17 @@
 import styled from "styled-components"
 
 const ContainerElevatedSection = styled.main`
-    width: 75vw;
-    height: 80vh;
-    background-color: var(--light-color);
+    width: 72vw;
+    height: 75vh;
+    background-color: var(--primary-color);
     position: absolute;
     bottom: 0px;
-    right: 0;
-    -webkit-box-shadow: -5px -5px 14px rgba(50, 50, 50, 0.77);
-	-moz-box-shadow:    -5px -5px 14px rgba(50, 50, 50, 0.77);
-	box-shadow:         -5px -5px 14px rgba(50, 50, 50, 0.77);	
-    border-radius: 0.5%;
+    right: 2%;
+    -webkit-box-shadow: -15px -15px 14px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    -15px -15px 14px rgba(50, 50, 50, 0.77);
+	box-shadow:         -15px -15px 14px rgba(50, 50, 50, 0.77);	
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
 `
 
 export default ContainerElevatedSection
