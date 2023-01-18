@@ -77,8 +77,8 @@ function VerticalMenu({ setFunctionality}: { setFunctionality: ISetState }) {
                 uncheckedIcon={false}
                 offColor={colors.white}
                 onColor={colors.black}
-                checkedHandleIcon={<BsMoonStarsFill className="icon"/>}
-                uncheckedHandleIcon={<BsSunFill className="icon"/>}
+                checkedHandleIcon={<BsMoonStarsFill className="icon-theme"/>}
+                uncheckedHandleIcon={<BsSunFill className="icon-theme"/>}
             />
         </ContainerVerticalMenu>
     )

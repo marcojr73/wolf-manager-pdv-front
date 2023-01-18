@@ -27,6 +27,7 @@ const ContainerNewClient = styled.section`
     input{
         height: 35%;
         width: 100%;
+        color: var(--primary-color);
     }
 
     .name{
@@ -58,7 +59,7 @@ const ContainerNewClient = styled.section`
 
     button{
         width: 7%;
-        height: 4vh;
+        height: 35%;
         border-radius: 0.5rem;
         background-color: var(--light-color);
         border: 0.1rem solid var(--primary-color);

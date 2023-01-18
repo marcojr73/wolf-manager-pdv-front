@@ -12,6 +12,7 @@ function RegisterClients() {
         register,
         handleSubmit,
         formState: { errors },
+        reset
     } = useForm({
         defaultValues: {
             name: "",
@@ -26,6 +27,7 @@ function RegisterClients() {
             await clientsApi.newClientApi(data)
             const response = await clientsApi.getClientsApi()
             toast("Sucesso")
+            reset()
             setBusiness(response)
         } catch (error: any) {
             showError(error)

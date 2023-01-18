@@ -8,6 +8,7 @@ const ContainerVerticalMenu = styled.aside`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #bbbbbb;
     background-color: var(--primary-color);
 
     .top{
@@ -30,6 +31,7 @@ const ContainerVerticalMenu = styled.aside`
     section:hover {
         background-color: var(--secondary-color);
         border-radius: 0.5rem;
+        color: var(--primary-color);
     }
 
     section{
@@ -52,10 +54,11 @@ const ContainerVerticalMenu = styled.aside`
         display: flex;
     }
 
-    .icon{
+    .icon-theme{
         font-size: 1.2rem;
         margin-left: 12%;
         margin-top: 10%;
+        color: var(--dark-color);
     }
 
 `

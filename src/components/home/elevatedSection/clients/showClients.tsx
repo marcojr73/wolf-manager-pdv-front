@@ -38,9 +38,9 @@ function ShowClients() {
                             <p className="info-item">Valor em débito</p>
                         </div>
                     </li>
-                    {business.clients.map((client, index) => {
+                    {business.clients.map((client) => {
                         return (
-                            <li key={index}>
+                            <li key={client.id}>
                                 <div className="user">
                                     <p className="index">{client.id}</p>
                                     <p className="name">{client.name}</p>
