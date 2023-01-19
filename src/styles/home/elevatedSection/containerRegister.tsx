@@ -4,6 +4,7 @@ import styled from "styled-components"
 const ContainerRegister = styled.section`
     width: 100%;
     height: 100%;
+    color: var(--light-color);
 
     h1{
         padding-top: 3%;
@@ -12,14 +13,28 @@ const ContainerRegister = styled.section`
     }
 
     form{
-        padding-top: 1%;
-        width: 70vw;
+        width: 65vw;
         height: 85%;
         margin: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
     }
 
     .top-inputs{
         display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .top-inputs-name-description {
+        width: 80%;
+    }
+
+    .product-name{
+        width: 100%;
+        height: 4vh;
+        margin-bottom: 2%;
     }
 
     input[type="file"] {
@@ -38,51 +53,51 @@ const ContainerRegister = styled.section`
         cursor: pointer;
     }
 
-    .product-name{
-        width: 58vw;
-        height: 4vh;
-        margin-bottom: 2%;
-        margin-left: 2vw;
+    input::placeholder{
+        color: var(--primary-color);
     }
-
-    input{
-        padding-left: 2%;
-    }
-
+    
     input:focus, select{
         box-shadow: 0 0 0 0;
         outline: 0;
     }
+
+    .bottom-inputs{
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1%;
+        height: 50%;
+    }
     
     .product-description{
-        margin-left: 2vw;
-        width: 58vw;
+        width: 100%;
         height: 6.75vw;
         padding-bottom: 3.75vw;
     }
 
-    .bottom-inputs{
-        width: 70vw;
-        height: 35vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50px 50px 50px 50px 50px;
-        grid-gap: 20px;
+    input, select{
+        padding-left: 2%;
+        width: 100%;
+        height: 80%;
+    }
+
+    .input{
+        width: 100%;
+        height: 90%;
     }
 
     button{
-        width: 25vw;
-        height: 5vh;
         margin: auto;
-        display: flex;
-        align-self: center;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        background-color: var(--primary-color);
+        width: 100%;
+        height: 8%;
+        background-color: var(--secondary-color);
         border: none;
-        border-radius: 0.5rem;
-        margin-top: 5%;
+        border-radius: 5px;
+        font-size: 0.8vw;
+        padding: 0px 0px 0px 2%;
+        color: var(--primary-color);
     }
 `
 

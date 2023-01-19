@@ -48,7 +48,7 @@ const ContainerShowClients = styled.section`
         align-items: center;
         width: 95%;
         height: 8%;
-        color: var(--primary-color);;
+        color: var(--primary-color);
     }
 
     .top{

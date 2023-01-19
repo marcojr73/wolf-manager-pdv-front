@@ -1,6 +1,4 @@
-import { useContext } from "react"
 import { TnewUser } from "../interfaces"
-import { UserContext } from "../provider"
 import axiosInstance from "./axiosInstance"
 
 async function newClientApi(data: TnewUser) {
