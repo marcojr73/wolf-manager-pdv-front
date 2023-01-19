@@ -70,6 +70,22 @@ interface TnewProduct {
     icms:  number | string
 }
 
+type Tproduct = {
+    nameProduct: string;
+    description: string;
+    picture: string;
+    provider: string;
+    brand: string;
+    code: number;
+    codeBar: string;
+    stock: number;
+    unitMeasurement: string;
+    costPrice: number;
+    salePrice: number
+    validate: number;
+    icms: number;
+}[]
+
 export type {
     TsignUp,
     TsignIn,
@@ -77,5 +93,6 @@ export type {
     TnewUser,
     Tbusinesscontext,
     Tprops,
-    TnewProduct
+    TnewProduct,
+    Tproduct
 }

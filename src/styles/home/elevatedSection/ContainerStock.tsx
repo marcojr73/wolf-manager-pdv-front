@@ -38,55 +38,15 @@ const ContainerStock = styled.section`
         margin-top: 2%;
     }
     
-    p{
-        border-bottom: 0.1rem solid var(--primary-color);
-        
-    }
-
     .info-item{
         display: flex;
         justify-content: center;
+    }
+    
+    .l{
+        border-bottom: 0.1rem solid var(--primary-color);
         padding-bottom: 5%;
     }
-
-    /* .r1{
-        background-color: gray;
-    }
-    .r2{
-        background-color: blue;
-    }
-    .r3{
-        background-color: green;
-    }
-    .r4{
-        background-color: violet;
-    }
-    .r5{
-        background-color: aliceblue;
-    }
-    .r6{
-        background-color: black;
-    }
-    .r7{
-        background-color: brown;
-    }
-    .r8{
-        background-color: pink;
-    }
-    .r9{
-        background-color: yellow;
-    }
-    .r10{
-        background-color: white;
-    }
-    .r11{
-        background-color: orange;
-    }
-    .r12{
-        background-color: salmon;
-    }  */
-
-
 `
 
 export default ContainerStock

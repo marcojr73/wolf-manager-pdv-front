@@ -1,4 +1,4 @@
-import { TnewProduct } from "../interfaces"
+import { TnewProduct, Tproduct } from "../interfaces"
 import axiosInstance from "./axiosInstance"
 
 async function registerNewProductApi(data: TnewProduct) {
@@ -36,7 +36,15 @@ function parseData(data: TnewProduct){
 }
 
 async function getProductsApi(){
-
+    const url = "/products"
+    const token = localStorage.getItem("token")
+    const config = {
+        headers: {
+            authorization: `Bearer ${token}`
+        }
+    }
+    const response = await axiosInstance.get(url, config)
+    return response.data as Tproduct
 }
 
 export default {
