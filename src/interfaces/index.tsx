@@ -54,6 +54,21 @@ type Tprops = {
     children: ReactNode
 }
 
+interface TnewProduct {
+    nameProduct: string,              
+    description: string | null,              
+    picture:  string | null,
+    provider:  string,
+    brand:  string | null,
+    code:  number | string,
+    codeBar:  string
+    stock: number | string,
+    unitMeasurement: string,
+    costPrice: number | string,
+    salePrice: number | string,
+    validate: number | null | string,
+    icms:  number | string
+}
 
 export type {
     TsignUp,
@@ -61,5 +76,6 @@ export type {
     TstateUser,
     TnewUser,
     Tbusinesscontext,
-    Tprops
+    Tprops,
+    TnewProduct
 }

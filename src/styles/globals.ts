@@ -17,13 +17,18 @@ export default createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
 }
 
-input {
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+input, select{
     background-color: var(--secondary-color);
     border: none;
     border-radius: 5px;
     font-size: 0.8vw;
     padding: 0px 0px 0px 2%;
-    color: var(--light-color);
+    color: var(--primary-color);
 }
 
 input:focus{
@@ -39,7 +44,6 @@ input:focus{
     width: 70%;
     font-weight: bold;
     font-size: 0.7rem;
-    margin-top: 1%;
 }
 
 .switch{
