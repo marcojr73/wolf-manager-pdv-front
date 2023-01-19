@@ -17,23 +17,29 @@ async function registerNewProductApi(data: TnewProduct) {
 
 function parseData(data: TnewProduct){
     if(data.validate) data.validate = +data.validate
+    else data.validate = 0
     return {
         nameProduct: data.nameProduct,              
         description: data.description,              
-        picture:  data.picture,
-        provider:  data.provider,
-        brand:  data.brand,
-        code:  +data.code,
-        codeBar:  data.codeBar,
+        picture: data.picture,
+        provider: data.provider,
+        brand: data.brand,
+        code: +data.code,
+        codeBar: data.codeBar,
         stock: +data.stock,
         unitMeasurement: data.unitMeasurement,
         costPrice: +data.costPrice,
         salePrice: +data.salePrice,
         validate: data.validate,
-        icms:  +data.icms
+        icms: +data.icms
     }
+}
+
+async function getProductsApi(){
+
 }
 
 export default {
     registerNewProductApi,
+    getProductsApi
 }   

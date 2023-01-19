@@ -1,14 +1,17 @@
 import React from "react"
 import { useForm } from "react-hook-form"
+import { toast } from "react-toastify"
 import productsApi from "../../../api/productsApi"
 import { TnewProduct } from "../../../interfaces"
 import ContainerRegister from "../../../styles/home/elevatedSection/containerRegister"
+import showError from "../../../utils/showError"
 
 function Register() {
     const {
         register,
         handleSubmit,
         formState: { errors },
+        reset
     } = useForm({
         defaultValues: {
             nameProduct: "",
@@ -29,10 +32,11 @@ function Register() {
 
     async function onSubmit(data: TnewProduct) {
         try {
-            const response = await productsApi.registerNewProductApi(data)
-            console.log(response)
+            await productsApi.registerNewProductApi(data)
+            toast("Sucesso")
+            reset()
         } catch (error) {
-            console.log(error)
+            showError(error)
         }
     }
 
