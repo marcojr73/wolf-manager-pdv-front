@@ -86,6 +86,18 @@ type Tproduct = {
     icms: number;
 }[]
 
+type Tsales = {
+    balance: {
+        date: string;
+        balance: number;
+        numberSales: number;
+    }[];
+    stats: {
+        sumBilling: number;
+        mediaBilling: string;
+    };
+}
+
 export type {
     TsignUp,
     TsignIn,
@@ -94,5 +106,6 @@ export type {
     Tbusinesscontext,
     Tprops,
     TnewProduct,
-    Tproduct
+    Tproduct,
+    Tsales
 }
