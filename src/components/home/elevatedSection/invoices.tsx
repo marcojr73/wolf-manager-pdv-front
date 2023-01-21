@@ -1,8 +1,9 @@
 import React from "react"
+import Building from "../../../utils/building"
 
 function Invoices(){
     return (
-        <h1>Invoices</h1>
+        <Building/>
     )
 }
 

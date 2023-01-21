@@ -6,6 +6,11 @@ function messageTranslation(message: string){
     if(message === "This password is incorrect") return "Senha incorreta"
     if(message === "Created") return "Sucesso"
     if(message === "Name is required") return "Nome é um campo obrigatório"
+    
+    if(message === "Units measurement invalid type") return "Unidade de medida inválida"
+    if(message === "Code Already in use") return "Código já cadastrado"
+    if(message === "token not send") return "Token não enviado"
+    if(message === "token expired or invalid") return "Token expirado ou inválido"
     return message
 }
 
