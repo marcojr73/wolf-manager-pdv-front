@@ -28,8 +28,8 @@
 
 ## Como usar
 
-Instale meu projeto e suas dependências
-Inicie o back-end na porta 5000
+- Instale meu projeto e suas dependências
+- Inicie o back-end na porta 5000
 
 ```bash
   git clone git@github.com:marcojr73/wolf-manager-pdv-front.git
