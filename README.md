@@ -10,7 +10,6 @@
 
 <p align="center">
    <img width=650 src="public/images/screen1.png"/>
-   <img width=650 src="public/images/screen2.png"/>
    <img width=650 src="public/images/screen3.png"/>
    <img width=650 src="public/images/screen4.png"/>
    <img width=650 src="public/images/screen5.png"/>
