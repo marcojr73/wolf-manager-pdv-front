@@ -16,11 +16,20 @@
    <img width=650 src="public/images/screen6.png"/>
 </p>
 
+
+
+***
+
+### Back end
+
+- [veja meu repositório back end desta aplicação aqui](https://github.com/marcojr73/wolf-manager-pdv-back)
+
 ***
 
 ## Como usar
 
 Instale meu projeto e suas dependências
+Inicie o back-end na porta 5000
 
 ```bash
   git clone git@github.com:marcojr73/wolf-manager-pdv-front.git
@@ -29,13 +38,14 @@ Instale meu projeto e suas dependências
 ```bash
   npm install
   
-  npm run start
+  npm run dev
 ```
 
 ***
 
 ##	 Tecnologias e Conceitos
 
+- Typescript
 - Nexts.js
 - styled-Componentes
 - Dark theme and light theme
