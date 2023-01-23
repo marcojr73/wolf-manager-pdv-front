@@ -115,7 +115,7 @@ function Register() {
                             <p className="input-error">insira a validade</p> : null}
                     </div>
                 </div>
-                <button type="button" onClick={() => handleSubmit(onSubmit)()} >Confirmar (f3)</button>
+                <button type="button" onClick={() => handleSubmit(onSubmit)()}>Confirmar (f3)</button>
             </form>
         </ContainerRegister>
     )

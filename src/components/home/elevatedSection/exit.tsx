@@ -1,8 +1,13 @@
+import Router from "next/router"
 import React from "react"
+import ContainerExit from "../../../styles/home/elevatedSection/ContainerExit"
 
-function Exit(){
+function Exit() {
     return (
-        <h1>Exit</h1>
+        <ContainerExit>
+            <h1>Deseja mesmo sair?</h1>
+            <button type="button" onClick={() => Router.push("/")}>Sair</button>
+        </ContainerExit>
     )
 }
 

@@ -50,10 +50,10 @@ function Stock() {
                                     <p className="info-item">{product.codeBar}</p>
                                     <p className="info-item">{product.stock}</p>
                                     <p className="info-item">{product.unitMeasurement}</p>
-                                    <p className="info-item">{product.costPrice}</p>
-                                    <p className="info-item">{product.salePrice}</p>
-                                    <p className="info-item">{product.validate}</p>
-                                    <p className="info-item">{product.icms}</p>
+                                    <p className="info-item">{((product.costPrice)/100).toFixed(2)} R$</p>
+                                    <p className="info-item">{((product.salePrice)/100).toFixed(2)} R$</p>
+                                    <p className="info-item">{product.validate} dias</p>
+                                    <p className="info-item">{product.icms} %</p>
                                 </li>
                             )
                         })

@@ -67,7 +67,7 @@ function VerticalMenu({ setFunctionality}: { setFunctionality: ISetState }) {
                 </section>
                 <section onClick={() => setFunctionality(<Exit />)}>
                     <ImExit className="icon" />
-                    <p>Exit</p>
+                    <p>Sair</p>
                 </section>
             </aside>
             <Switch className="switch"

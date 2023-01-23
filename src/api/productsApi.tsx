@@ -28,8 +28,8 @@ function parseData(data: TnewProduct){
         codeBar: data.codeBar,
         stock: +data.stock,
         unitMeasurement: data.unitMeasurement,
-        costPrice: +data.costPrice,
-        salePrice: +data.salePrice,
+        costPrice: +data.costPrice * 100,
+        salePrice: +data.salePrice * 100,
         validate: data.validate,
         icms: +data.icms
     }
