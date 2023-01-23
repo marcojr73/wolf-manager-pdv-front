@@ -21,7 +21,7 @@ const ContainerExit = styled.section`
         background-color: var(--secondary-color);
         border: none;
         font-size: 2rem;
-        color: var(--light-color);
+        color: var(--primary-color);
     }
 
 `
